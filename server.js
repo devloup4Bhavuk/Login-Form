@@ -17,7 +17,8 @@ app.get('/login',(req,res)=>{
 });
 
 app.get('/',(req,res)=>{
-    res.redirect('/login');
+    // res.redirect('/login');
+    res.render('profile');
 });
 
 
