@@ -1,0 +1,9 @@
+.login-left{
+    background-color: #aee6e6;
+}
+.login-input{
+    border-bottom: 1px solid #aee6e6;
+    outline: none;
+    width: 40%;
+    margin-left: 50px;
+}
