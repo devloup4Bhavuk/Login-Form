@@ -8,9 +8,18 @@ app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
 
+app.get('/register',(req,res)=>{
+    res.render('register');
+});
+
+app.get('/login',(req,res)=>{
+    res.render('login');
+});
+
 app.get('/',(req,res)=>{
-    res.render('index');
-})
+    res.redirect('/login');
+});
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT,()=>{
